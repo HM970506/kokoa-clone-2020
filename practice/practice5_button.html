@@ -1,0 +1,83 @@
+<!DOCTYPE >
+<html lang="kr">
+  <head>
+    <style>
+      button:active {
+        background-color: tomato;
+      }
+      button:hover {
+        background-color: thistle;
+      }
+      input:focus {
+        background-color: red;
+      }
+      a:visited {
+        color: tomato;
+      }
+      a:hover {
+        color: teal;
+      }
+      a:focus {
+        color: turquoise;
+      }
+      form {
+        border: 1px solid salmon;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+      form:focus-within {
+        border-color: seagreen;
+      }
+      form:hover input {
+        background-color: sienna;
+      }
+      form input:focus {
+        background-color: silver;
+      }
+
+      span {
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      input::placeholder {
+        color: wheat;
+      }
+      p::selection {
+        background-color: violet;
+      }
+
+      p::first-letter {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button id="activate">activate</button>
+      <button id="hover">hover</button>
+      <input type="text" placeholder="focus:키보드 선택 가능" />
+      <p>
+        <a href="https://naver.com">방문하면 색이 변하는 링크</a>
+      </p>
+    </div>
+    <div>
+      <form>
+        <input
+          type="text"
+          placeholder="focus-within은 자식이 선택되면 부모가 변한다"
+        />
+        <input
+          type="text"
+          placeholder="hover input은 부모 안에 커서가 있으면 자식이 변한다"
+        />
+        <input
+          type="text"
+          placeholder="input:focus는 자식이 선택되면 지식이 변한다"
+        />
+      </form>
+    </div>
+    <p>Hello, HTMLS!</p>
+  </body>
+</html>

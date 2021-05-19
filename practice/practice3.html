@@ -1,0 +1,50 @@
+<!DOCTYPE >
+<html lang="kr">
+  <head>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 20px;
+      }
+      div {
+        width: 300px;
+        height: 300px;
+        color: black;
+        background-color: thistle;
+        position: relative;
+      }
+      #position_fixed {
+        top: 5px;
+        width: 350px;
+        background-color: wheat;
+      }
+      .green {
+        background-color: teal;
+        position: relative;
+        top: -10px;
+        left: -10px;
+        height: 100px;
+        width: 100px;
+      }
+      .absolute {
+        position: absolute;
+        background-color: turquoise;
+        height: 150px;
+        width: 150px;
+        right: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="green"></div>
+      <div class="absolute">
+        absolute는 가장 끝으로 이동한다. 단, position이 relative인 부모 기준.
+      </div>
+    </div>
+    <div id="position_fixed">
+      position:fixed사용시 초기 위치에 고정되나 top등을 이용하여 바꿀수도 있다.
+      이때 가장 위에 위치한다.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE >
+<html lang="kr">
+  <head>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      div {
+        width: 350px;
+        height: 150px;
+        background-color: wheat;
+        position: relative;
+      }
+      div:first-child {
+        background-color: tomato;
+      }
+      div:nth-child(3) {
+        background-color: yellow;
+      }
+      div:nth-child(2n) {
+        color: tomato;
+      }
+      div:last-child {
+        background-color: teal;
+      }
+      div > span {
+        text-decoration: underline;
+      }
+      span {
+        color: blue;
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      p span {
+        color: black;
+        background-color: turquoise;
+      }
+      p ~ span {
+        color: yellow;
+      }
+      p + span {
+        color: violet;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span>바로밑 자식 span에게만 밑줄을 주고 싶으면 div > spacn</span>
+      <p>
+        <span>span도 박스니까 div에 포함된다</span>
+      </p>
+      <span> p바로밑 span은 p+span으로</span>
+    </div>
+    <div>
+      2
+      <p><span>이것은 p안 span</span></p>
+      <address>나는 span이 아님</address>
+      <span> p밑 모든 span은 p~span으로</span>
+    </div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+  </body>
+</html>

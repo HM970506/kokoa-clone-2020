@@ -1,0 +1,68 @@
+<!DOCTYPE >
+<html lang="kr">
+  <head>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      @keyframes flip_two {
+        0% {
+          transform: rotateY(0);
+        }
+        50% {
+          transform: rotateY(180deg) translateY(100px);
+        }
+        100% {
+          transform: rotate(0) translateY(0px);
+        }
+      }
+      div {
+        display: flex;
+      }
+      a {
+        color: wheat;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 20px;
+        transition: all 1s ease-in-out;
+      }
+      a:hover {
+        color: tomato;
+        background-color: wheat;
+      }
+
+      #one {
+        border: 5px solid black;
+        border-radius: 50%;
+        transition: transform 1s ease-in-out;
+      }
+      #one:hover {
+        transform: rotateY(80deg) rotateX(20deg) translate(-400px);
+      }
+
+      #two {
+        animation: flip_two 5s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <a herf="#"
+      >transisiton: a->a:hover이므로 transition은 a에 있어야 하고, 변하는 조건은
+      a:hover에 있어야 한다</a
+    >
+    <p><img id="one" src="image/kakaotalk.jpg" /></p>
+    <p>transform mdn을 참조해!</p>
+    <div>
+      <p>
+        <img id="two" src="image/kakaotalk.jpg" />
+      </p>
+      <p>0%, 50%, 100%대신 from to를 쓸 수도 있음!</p>
+    </div>
+  </body>
+</html>

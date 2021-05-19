@@ -1,0 +1,104 @@
+<!DOCTYPE >
+<html lang="kr">
+  <head>
+    <style>
+      @keyframes bar_ani {
+        0% {
+          transform: none;
+        }
+        25% {
+          transform: scaleY(2);
+        }
+        50%,
+        100% {
+          transform: none;
+        }
+      }
+
+      @keyframes dot_ani {
+        50% {
+          transform: rotate(0.5turn);
+        }
+        100% {
+          transform: rotate(0.5turn);
+        }
+      }
+      body {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+      }
+      div {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 60px;
+        height: 50px;
+      }
+      #dot_div {
+        animation: dot_ani 1s ease-in-out infinite;
+        position: relative;
+        bottom: 50px;
+      }
+      #bar_div {
+        position: relative;
+        bottom: 30px;
+      }
+      #background {
+        padding: 150px;
+        background-color: cadetblue;
+        height: 20px;
+        width: 60px;
+      }
+      .dot {
+        background-color: white;
+        flex: column;
+        height: 5px;
+        width: 5px;
+        border-radius: 100%;
+      }
+      .bar {
+        background-color: white;
+        animation: bar_ani 1.8s ease-out infinite;
+        height: 30px;
+        width: 8px;
+      }
+
+      #two {
+        animation-delay: 0.1s;
+      }
+      #three {
+        animation-delay: 0.2s;
+      }
+      #four {
+        animation-delay: 0.3s;
+      }
+      #five {
+        animation-delay: 0.4s;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div id="background">
+        <div id="dot_div">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div id="bar_div">
+          <div id="one" class="bar"></div>
+          <div id="two" class="bar"></div>
+          <div id="three" class="bar"></div>
+          <div id="four" class="bar"></div>
+          <div id="five" class="bar"></div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE >
+<html lang="kr">
+  <head>
+    <style>
+      input:required {
+        border: 1px solid tomato;
+      }
+      input[type="password"] {
+        background-color: thistle;
+      }
+      input[placeholder~="name"] {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form>
+        <input type="text" placeholder="first name" />
+        <input type="text" placeholder="last name" />
+        <input type="password" required placeholder="password" />
+      </form>
+    </div>
+    <p>input:required = input이 required하다면 아래를 적용해라</p>
+    <p>
+      input[type="password"] = input type이 password인 것들에 아래를 적용해라
+    </p>
+    <p>
+      input[placehold~="name"] = name이 들어간 placeholder인 것들에 아래를
+      적용해라
+    </p>
+  </body>
+</html>

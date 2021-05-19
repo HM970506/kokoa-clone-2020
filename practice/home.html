@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.png"
+    />
+    <title>home - mywebsite</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="is my website" />
+  </head>
+  <body>
+    <form>
+      <header>
+        <h1>css 는 cascaindin로 가장 마지막 설정 적용</h1>
+        <link href="styles.css" rel="stylesheet" />
+
+        <style>
+          h1 {
+            color: blue;
+          }
+        </style>
+
+        <label for="profile">Profile Photo</label>
+        <input id="profile" type="file" accept=".pdf, .png" />
+      </header>
+      <main>
+        <div>
+          <span>span은 짧은 text를 위한 tag이다</span>
+        </div>
+        <div>
+          <input type="file" accept="image/*" />
+          <input required placeholder="Id" type="text" />
+          <input
+            required
+            placeholder="password"
+            minlength="5"
+            type="password"
+          />
+        </div>
+
+        <div>
+          <a href="http://google.com" , target="_blank"
+            >Achor have hyperlink. Achor need a attribute</a
+          >
+          <img
+            src="https://pbs.twimg.com/media/EYy9rv-UYAAMh5Z?format=png&name=small"
+          />
+          <img src="image/logo.jpg" />
+        </div>
+      </main>
+      <footer>
+        <div>
+          <label for="website">Website</label>
+          <input id="website" required type="url" />
+          <input id="range" required type="range" />
+          <input type="submit" value="Create Account" />
+        </div>
+      </footer>
+    </form>
+  </body>
+</html>
