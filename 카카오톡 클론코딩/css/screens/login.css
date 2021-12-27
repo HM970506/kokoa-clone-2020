@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&family=Song+Myung&display=swap");
 .welcome-header {
   margin: 90px 0px;
   text-align: center;
@@ -6,31 +7,50 @@
   align-items: center;
 }
 .welcome-header__title {
-  margin-bottom: 20px;
-  font-size: 25px;
+  font-family: "Secular One", sans-serif;
+  margin-bottom: 5px;
+  font-size: 35px;
+  color: white;
 }
+
+.welcome-header__subtitle {
+  font-family: "Song Myung", serif;
+  margin-top: 30px;
+  font-size: 20px;
+  color: rgb(68, 202, 255);
+}
+
+.welcome-header__text_box {
+  width: 70%;
+  text-align: center;
+  margin-top: 20px;
+}
+
 .welcome-header__text {
-  width: 60%;
+  text-align: center;
+  font-size: 15px;
+  margin: 5px 0px;
   opacity: 0.7;
 }
 
 #login-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 0px 30px;
+  margin-top: -30px;
 }
 
 #login-form input {
+  width: 80%;
   border: none;
-  padding: 15px 0px;
+  border-radius: 15px;
+  padding: 15px 10px;
   font-size: 18px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 25px;
 }
 
 #login-form input:not([type="submit"]) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  transition: border-color 0.3s ease-in-out;
 }
 
 #login-form input::placeholder {
@@ -40,6 +60,7 @@
 #login-form input:focus {
   border-color: var(--yellow);
 }
+
 #login-form input[type="submit"] {
   background-color: var(--yellow);
   cursor: pointer;
@@ -52,4 +73,32 @@
   text-decoration: none;
   color: inherit; /*상속*/
   font-size: 13px;
+}
+
+.button_box {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  width: 180px;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.kakao_button {
+  background-color: #fee500;
+}
+
+.github_button {
+  background-color: rgb(55, 65, 81);
+  color: white;
+  border: 1px white solid;
+}
+
+.button_mark {
+  margin-right: 10px;
 }

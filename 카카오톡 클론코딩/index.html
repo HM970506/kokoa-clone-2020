@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Kokoa Clone</title>
+    <title>Welcome to Nomadcoder</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -23,21 +23,34 @@
       </div>
     </div>
     <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
-      <p class="welcome-header__text">
-        If you have a Kokoa Acount, log in without your email of phone number.
-      </p>
+      <h1 class="welcome-header__title">Log in to Nomad Coders</h1>
+      <h3 class="welcome-header__subtitle">Clone Startups. Learn to code.</h3>
+      <div class="welcome-header__text_box">
+        <p class="welcome-header__text">코딩은 진짜를 만들어보는거야!</p>
+        <p class="welcome-header__text">
+          실제 서비스를 따라 만들면서 코딩을 배우세요.
+        </p>
+      </div>
     </header>
 
     <form id="login-form" action="friends.html" method="get">
       <input name="username" type="text" placeholder="Email or phone number" />
       <input name="password" type="password" placeholder="Password" />
       <input type="submit" value="Log In" />
-      <a href="#">Find Kakao Account or Password</a>
+      <div class="button_box">
+        <button class="button kakao_button">
+          <i class="fas fa-comment button_mark"></i>Kakao
+        </button>
+        <button class="button github_button">
+          <i class="fab fa-github button_mark"></i>Github
+        </button>
+      </div>
     </form>
+
     <div id="no-mobile">
-      <span>Success</span>
+      <span>Is too Big!</span>
     </div>
+    <span class="background"> </span>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"

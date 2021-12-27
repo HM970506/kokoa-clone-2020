@@ -1,15 +1,11 @@
 .more-screen .icon-row {
   margin-top: 35px;
 }
-
-.more-suggestions {
-  margin-top: 50px;
-  border-top: var(--main-border);
-  padding-top: 40px;
-}
-
 .more-suggestions__title {
-  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: var(--grey);
 }
 
 .more-suggestions__icons {
@@ -29,7 +25,6 @@
   background-color: var(--yellow);
   border-radius: 10px;
   margin-bottom: 10px;
-  /*안쪽 i를 중앙정렬하기 위해*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,4 +33,35 @@
 .more-suggestions__icon-image i {
   font-size: 32px;
   color: white;
+}
+
+#class_insta {
+  background-color: rgb(102, 56, 230);
+  color: white;
+}
+
+#class_youtube {
+  background-color: rgb(209, 12, 12);
+  color: white;
+}
+
+.more-component__column {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.more-component__title {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.more-component__subtitle {
+  font-size: 13px;
+  color: var(--grey);
+}
+
+.user-component__mark {
+  color: var(--yellow);
 }

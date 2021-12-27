@@ -1,9 +1,50 @@
-.recommended-friends {
-  margin: 25px 0px;
-  padding: 25px 0px;
-  border-top: var(--main-border);
-  border-bottom: var(--main-border);
+.mains {
+  margin-bottom: 50px;
 }
+
+.community_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.community_text__title {
+  width: 65%;
+  text-align: center;
+}
+
+.community_title_h2 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.community_subtitle {
+  margin-top: 10px;
+  color: var(--grey);
+}
+
+.community_text__hashtag {
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 3px;
+  font-weight: 800;
+}
+
+#community_title__mark {
+  margin-left: 10px;
+  color: var(--yellow);
+}
+
+.community_text__mark {
+  margin-right: 10px;
+}
+
+.community_text__text {
+  margin: 15px;
+  display: flex;
+}
+
 .recommended-friends__title {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.5);
@@ -32,9 +73,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .open-post__title {
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 7px;
 }
@@ -89,8 +132,8 @@
   border-radius: 20px;
   font-size: 12px;
   position: absolute; /*부모가 relative면 겹칠 수 있음*/
-  bottom: 10px; /*부모기준 절대위치*/
-  right: 10px;
+  bottom: 5px; /*부모기준 절대위치*/
+  right: 5px;
 
   display: flex;
   align-items: center;
@@ -118,4 +161,28 @@
 .open-post__heart-count:hover i {
   will-change: transform; /*애니메이션이 있다는 것을 브라우저에게 암시하여 그래픽카드를 이용, 더 부드러운 애니메이션 제공*/
   animation: heartBeat 1s linear infinite;
+}
+
+.community_title {
+  display: flex;
+  align-items: center;
+}
+
+.community_title_h2 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.community_title_icon {
+  margin-left: 10px;
+  color: var(--yellow);
+}
+
+.open-post__image {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

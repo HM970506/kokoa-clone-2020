@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>More - Kokoa Clone</title>
+    <title>Mypage</title>
   </head>
   <body>
     <div class="status-bar">
@@ -23,7 +23,7 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">More</h1>
+      <h1 class="screen-header__title">Mypage</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
@@ -36,10 +36,9 @@
     <main class="main-screen more-screen">
       <div class="user-component">
         <div class="user-component__column">
-          <img
-            src="https://avatars3.githubusercontent.com/u/3612017"
-            class="user-component__avatar user-component__avatar--xl"
-          />
+          <div class="user-component__image">
+            <i class="fas fa-user-alt fa-3x"></i>
+          </div>
           <div class="user-component__text">
             <h4 class="user-component__title">Nicolas</h4>
             <h6 class="user-component__subtitle">+ 787 666 999</h6>
@@ -47,45 +46,65 @@
         </div>
 
         <div class="user-component__column">
-          <i class="far fa-comment-alt fa-2x"></i>
+          <i class="far fa-comment-alt fa-2x user-component__mark"></i>
         </div>
       </div>
 
+      <hr />
+
       <div class="icon-row">
         <div class="icon-row__icon">
-          <i class="far fa-calendar"></i>
-          <span>Calendar</span>
+          <i class="fas fa-chalkboard-teacher"></i>
+          <span>Courses</span>
         </div>
         <div class="icon-row__icon">
-          <i class="far fa-smile-beam"></i>
-          <span>Emoticons</span>
+          <i class="fas fa-pen"></i>
+          <span>Challenges</span>
         </div>
         <div class="icon-row__icon">
-          <i class="fas fa-paint-roller"></i>
-          <span>Themes</span>
+          <i class="fas fa-users"></i>
+          <span>Community</span>
         </div>
         <div class="icon-row__icon">
-          <i class="fas fa-file-invoice-dollar"></i>
-          <span>Account</span>
+          <i class="fas fa-question"></i>
+          <span>FAQ</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-road"></i>
+          <span>Roadmap</span>
         </div>
       </div>
+
+      <hr />
 
       <div class="more-suggestions">
         <h4 class="more-suggestions__title">Suggestions</h4>
 
-        <div class="more-suggestions__icons">
-          <div class="more-suggestions__icon">
-            <div class="more-suggestions__icon-image">
-              <i class="fas fa-quote-right"></i>
+        <div class="more-component">
+          <div class="more-component__column">
+            <div class="user-component__smallimage" id="class_insta">
+              <i class="fab fa-instagram fa-2x"></i>
             </div>
-            <span class="more-suggestions__icon-text">Kokoa Story</span>
+            <div class="more-component__text">
+              <h4 class="more-component__title">
+                [풀스택] 인스타그램 클론코딩
+              </h4>
+              <p class="more-component__subtitle">
+                인스타그램 백엔드 + 프런트엔드 + 앱 + 서버
+              </p>
+            </div>
           </div>
 
-          <div class="more-suggestions__icon">
-            <div class="more-suggestions__icon-image">
-              <i class="fas fa-quote-right"></i>
+          <div class="more-component__column">
+            <div class="user-component__smallimage" id="class_youtube">
+              <i class="fab fa-youtube fa-2x"></i>
             </div>
-            <span class="more-suggestions__icon-text">Kokoa Story</span>
+            <div class="more-component__text">
+              <h4 class="more-component__title">[풀스택] 유튜브 클론코딩</h4>
+              <p class="more-component__subtitle">
+                유튜브 백엔드 + 프런트엔드 + 배포
+              </p>
+            </div>
           </div>
         </div>
       </div>

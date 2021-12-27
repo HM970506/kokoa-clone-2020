@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>You Are Awesome!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="page" id="page1">
+      <div id="page1_header" class="header">
+        <span id="page1_header_backarrow"
+          ><i class="fas fa-arrow-left"></i
+        ></span>
+        <span id="page1_header_search"><i class="fas fa-search"></i></span>
+      </div>
+      <div id="page1_person">
+        <div id="page1_person_image"></div>
+        <div id="page1_person_title">Tyler, The Creator</div>
+        <div id="page1_person_text">Rap, Hip-Hop</div>
+      </div>
+      <div id="page1_button">
+        <button id="page1_button_shuffle" class="button1">Shuffle</button>
+        <button id="page1_button_heart" class="button1">
+          <span id="page1_button_heart_mark"><i class="fas fa-heart"></i></span>
+          <span id="page1_button_heart_text">212971</span>
+        </button>
+      </div>
+      <div id="page1_list">
+        <div class="page1_list_box">
+          <div class="page1_list_box_image"></div>
+          <div class="page1_list_box_text">
+            <div class="page1_list_box_text_singer">Tyler, The Creator</div>
+            <div class="page1_list_box_text_title">EARFQUAKE</div>
+          </div>
+          <div class="page1_list_box_mark">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <div class="page1_list_box">
+          <div class="page1_list_box_image" id="playing">
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="page1_list_box_text">
+            <div class="page1_list_box_text_singer">Tyler, The Creator</div>
+            <div class="page1_list_box_text_title">NOVEMBER</div>
+          </div>
+          <div class="page1_list_box_mark">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+      </div>
+      <div id="page1_player">
+        <div id="page1_player_text">
+          <div id="page1_player_text_singer">Tyler, The Creator</div>
+          <div id="page1_player_text_title">NOVEMBER</div>
+        </div>
+        <div id="page1_player_mark">
+          <span id="page1_player_mark_back"
+            ><i class="fas fa-step-backward"></i
+          ></span>
+          <span id="page1_player_mark_pause"
+            ><i class="fas fa-pause fa-2x"></i
+          ></span>
+          <span id="page1_player_mark_foward"
+            ><i class="fas fa-step-forward"></i
+          ></span>
+        </div>
+      </div>
+    </div>
+    <div class="page" id="page2">
+      <div id="page2_header" class="header">
+        <span id="page2_header_backarrow"
+          ><i class="fas fa-arrow-left"></i
+        ></span>
+        <span id="page2_header_menu"><i class="fas fa-ellipsis-v"></i></span>
+      </div>
+      <div id="page2_song">
+        <div id="page2_song_image"></div>
+        <div id="page2_song_title">November</div>
+        <div id="page2_song_singer">Tyler, The Creator</div>
+      </div>
+      <div id="page2_bar">
+        <div id="page2_bar_time">
+          <span id="page2_bar_time_now">1:56</span>
+          <span id="page2_bar_time_final">2:21</span>
+        </div>
+        <input type="range" id="page2_bar_input" />
+      </div>
+      <div id="page2_player">
+        <span id="page2_player_replay"
+          ><i class="fas fa-exchange-alt"></i
+        ></span>
+        <span id="page2_player_back"><i class="fas fa-step-backward"></i></span>
+        <span id="page2_player_play"><i class="fas fa-play"></i></span>
+        <span id="page2_player_foward"
+          ><i class="fas fa-step-forward"></i
+        ></span>
+        <span id="page2_player_mix"><i class="fas fa-random"></i></span>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/6478f529f2.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

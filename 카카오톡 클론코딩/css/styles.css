@@ -19,8 +19,8 @@
 @import "screens/chat.css";
 
 body {
-  color: #2e363e;
-  font-family: "Open Sans", sans-serif;
+  background-color: rgb(55, 65, 81);
+  color: white;
 }
 .main-screen {
   padding: 0px var(--horizontal-space);

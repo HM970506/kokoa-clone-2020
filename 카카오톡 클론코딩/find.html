@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Find - Kokoa Clone</title>
+    <title>Community</title>
   </head>
   <body>
     <div class="status-bar">
@@ -23,52 +23,94 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Find</h1>
+      <h1 class="screen-header__title">Community</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
+        <span
+          ><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a
+        ></span>
       </div>
     </header>
 
     <main class="main-screen">
-      <div class="icon-row">
-        <div class="icon-row__icon">
-          <i class="fas fa-qrcode"></i>
-          <span>QR Code</span>
+      <div class="mains">
+        <div class="community_title">
+          <h2 class="community_title_h2">
+            챌린지 후기글<i
+              class="fas fa-desktop fa"
+              id="community_title__mark"
+            ></i>
+          </h2>
         </div>
-        <div class="icon-row__icon">
-          <i class="far fa-address-book"></i>
-          <span>Add by Contacts</span>
-        </div>
-        <div class="icon-row__icon">
-          <i class="fas fa-fingerprint"></i>
-          <span>Add by ID</span>
-        </div>
-        <div class="icon-row__icon">
-          <i class="far fa-envelope"></i>
-          <span>Invite</span>
+        <hr />
+        <div class="community_text">
+          <div class="community_text__text">
+            <span class="community_text__hashtag">#html_css</span>
+            <p class="community_text__title">CSS 챌린지 15기 후기</p>
+            <span class="community_text_marks">
+              <span class="community_text__mark"
+                ><i class="far fa-thumbs-up"></i> 3</span
+              >
+              <span class="community_text__mark"
+                ><i class="far fa-comment-dots"></i> 10
+              </span>
+            </span>
+          </div>
+
+          <div class="community_text__text">
+            <span class="community_text__hashtag">#html_css</span>
+            <p class="community_text__title">유튜브 클론 챌린지 13기 후기</p>
+            <span class="community_text_marks">
+              <span class="community_text__mark"
+                ><i class="far fa-thumbs-up"></i> 1</span
+              >
+              <span class="community_text__mark"
+                ><i class="far fa-comment-dots"></i> 9
+              </span>
+            </span>
+          </div>
+
+          <div class="community_text__text">
+            <span class="community_text__hashtag">#html_css</span>
+            <p class="community_text__title">vanilla js 챌린지를 마치며..</p>
+            <span class="community_text_marks">
+              <span class="community_text__mark"
+                ><i class="far fa-thumbs-up"></i> 2</span
+              >
+              <span class="community_text__mark"
+                ><i class="far fa-comment-dots"></i> 6
+              </span>
+            </span>
+          </div>
+
+          <div class="community_text__text">
+            <span class="community_text__hashtag">#html_css</span>
+            <p class="community_text__title">우버이츠 클론 챌린지 후기</p>
+            <span class="community_text_marks">
+              <span class="community_text__mark"
+                ><i class="far fa-thumbs-up"></i> 4</span
+              >
+              <span class="community_text__mark"
+                ><i class="far fa-comment-dots"></i> 5
+              </span>
+            </span>
+          </div>
         </div>
       </div>
 
-      <div class="recommended-friends">
-        <h6 class="recommended-friends__title">Recommended Friends</h6>
-        <span>You have no recommended friends.</span>
-      </div>
-
-      <div class="open-chat">
-        <div class="open-chat__header">
-          <h4>Open Chat</h4>
-          <span
+      <div class="mains">
+        <div class="community_title">
+          <h2 class="community_title_h2">오픈채팅방</h2>
+          <span class="community_subtitle"
             >Go to Openchat Home <i class="fas fa-chevron-right fa-xs"></i>
           </span>
         </div>
-
+        <hr />
         <div class="open-post">
           <div class="open-post__column">
-            <h5 class="open-post__title">#BTS</h5>
-            <h6 class="open-post__hashtags">#bts#army#friends</h6>
+            <h5 class="open-post__title">코코아톡 클론코딩 챌린지 12기</h5>
+            <h6 class="open-post__hashtags">#html#css</h6>
             <div class="open-post__members">
-              <img src="https://avatars3.githubusercontent.com/u/3612017" />
               <span class="open-post__member-count">802 members</span>
               <div class="divider"></div>
               <span class="open-post__member-status">Active</span>
@@ -77,9 +119,36 @@
 
           <div class="open-post__column">
             <div class="open-post__photo">
-              <img src="https://avatars3.githubusercontent.com/u/3612017" />
+              <div class="open-post__image" id="class_koko">
+                <i class="fas fa-comment fa-2x"></i>
+              </div>
               <div class="open-post__heart-count">
                 <i class="fas fa-heart fa-xs"></i><span>326</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">
+              ReactJS로 영화 웹 서비스 만들기 10기
+            </h5>
+            <h6 class="open-post__hashtags">#javascript#Reactjs#html#css</h6>
+            <div class="open-post__members">
+              <span class="open-post__member-count">1035 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <div class="open-post__image" id="class_react">
+                <i class="fab fa-react fa-2x"></i>
+              </div>
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart fa-xs"></i><span>517</span>
               </div>
             </div>
           </div>

@@ -23,7 +23,6 @@
 }
 
 .friends-screen__channel-header {
-  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
@@ -51,4 +50,8 @@
   font-size: 132px;
   animation: hideSplashScreen 0.3s ease-in-out forwards; /*fowards=애니메이션후 변화된값 유지*/
   animation-delay: 2s;
+}
+
+.user-component__column_in_mark {
+  margin-left: 10px;
 }

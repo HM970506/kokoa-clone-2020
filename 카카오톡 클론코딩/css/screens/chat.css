@@ -1,5 +1,5 @@
 #chat-screen {
-  background-color: #abc1d1;
+  background-color: rgb(55, 65, 81);
   height: 500vh;
 }
 
@@ -8,7 +8,7 @@
   top: 0;
   position: fixed;
   width: 100%;
-  background-color: #abc1d1;
+  background-color: rgb(55, 65, 81);
   box-sizing: border-box;
 }
 
@@ -41,8 +41,8 @@
 }
 
 .chat__timestamp {
+  background-color: rgb(219, 219, 219);
   color: white;
-  background-color: #92a4b2;
   padding: 15px;
   font-size: 14px;
   border-radius: 25px;
@@ -73,7 +73,17 @@
   align-items: flex-end; /*just아님! 세로축 맨 밑으로 내리기 위함!*/
 }
 
+.message__video {
+  width: 300px;
+  height: 190px;
+  border-radius: 10px;
+  background-image: url("img.PNG");
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
 .message__bubble {
+  color: black;
   background-color: white;
   padding: 13px;
   font-size: 18px;
@@ -185,4 +195,10 @@
 
 .reply:focus-within {
   transform: translateY(80px);
+}
+
+.message__bubble_link {
+  font-size: 15px;
+  margin-top: 10px;
+  color: var(--grey);
 }

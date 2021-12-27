@@ -1,0 +1,163 @@
+body {
+  width: 400px;
+  display: block;
+  justify-content: center;
+}
+
+button {
+  border: none;
+}
+
+#header {
+  background-color: #ffce33;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  padding: 10px;
+  padding-top: 40px;
+}
+
+#search {
+  border-radius: 30px;
+  margin: 10px;
+  padding: 10px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  position: absolute;
+  top: 80px;
+  background-color: white;
+  box-shadow: 0px 10px 10px rgb(202, 202, 202);
+}
+
+#search_text {
+  border: none;
+  width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#searc_text::placeholder {
+  color: rgb(230, 230, 230);
+}
+
+#search_mark {
+  color: rgb(230, 230, 230);
+  margin-right: 10px;
+}
+
+#first {
+  margin-top: 50px;
+}
+
+#first_book {
+  display: flex;
+}
+
+#third_author {
+  display: flex;
+}
+
+#third_author_text {
+  width: 200px;
+}
+
+.image {
+  border-radius: 5px;
+  background-color: tomato;
+  height: 180px;
+  width: 140px;
+  margin: 10px;
+}
+
+.second_list_book_image {
+  border-radius: 5px;
+  background-color: tomato;
+  height: 90px;
+  width: 70px;
+  margin: 10px;
+}
+
+.button1 {
+  width: 90px;
+  height: 30px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#first_book_text_bottom_bookmark {
+  border-radius: 100%;
+  background-color: #ffce33;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+#first_book_text_bottom_booknow {
+  background-color: black;
+  color: white;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.star_yellow {
+  color: #ffce33;
+}
+
+.star_grey {
+  color: rgb(230, 230, 230);
+}
+
+.title {
+  font-weight: 900;
+  font-size: 23px;
+  margin: 10px;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px;
+}
+
+.sub {
+  color: darkgrey;
+  font-size: 15px;
+  margin: 10px;
+}
+
+.stars {
+  margin: 10px;
+  font-size: 15px;
+}
+
+#first_book_text_buttons {
+  margin: 10px;
+}
+
+#first_book_text_bottom {
+  display: flex;
+}
+
+.star_second {
+  font-size: 10px;
+}
+
+#second_list {
+  display: flex;
+}
+
+#second_list_book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
